@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+      font-family: "Rubik", serif;
+    font-size: 18px;
+    font-weight: 400;
+    background:#f7f7ff97;
+    cursor: default;
+}
+h1,h2{
+    color: hsl(229, 31%, 21%);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 150px;
+}
+nav .links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+nav .links a{
+    font-weight: 500;
+    text-decoration: none;
+    color: hsl(229, 31%, 21%);
+    transition: all  0.5s ease;
+}
+nav .links a:hover{
+    color: hsl(0, 94%, 66%);
+}
+nav .links a:last-child{
+    padding: 10px 20px;
+    background: hsl(0, 94%, 66%);
+    color: white;
+    border: 1.5px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px  hsla(229, 31%, 21%, 0.26);
+    transition: all  0.8s ease;
+
+
+}
+nav .links a:last-child:hover{
+    background: transparent;
+    color: hsl(0, 94%, 66%);
+    border: 1.5px  solid hsl(0, 94%, 66%);
+
+}
+section{
+    padding: 40px 150px;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+}
+.hero h1{
+    font-size: 45px;
+    font-weight: 500;
+}
+.hero p{
+    margin: 30px 0;
+    color: hsl(229, 8%, 60%);
+    max-width: 88%;
+    line-height: 1.4;
+}
+.hero .btns{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.hero .btns button{
+    font-weight: 500;
+    color: hsl(229, 31%, 21%);
+    padding: 10px 13px;
+    background-color:rgba(220, 220, 220, 0.308);
+    border: 1.5px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px  hsla(231, 69%, 60%, 0.205);
+    transition: all  0.8s ease;
+}
+.hero .btns button:hover{
+    background: transparent;
+    border : 1.5px solid  hsl(229, 8%, 60%);
+
+
+}
+.hero .btns button:first-child{
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+}
+.hero .btns button:first-child:hover{
+    background: transparent;
+    border : 1.5px solid  hsl(231, 69%, 60%);
+    color: hsl(231, 69%, 60%);
+}
+.hero img{
+    width: 400px;
+}
+.heroshape{
+    z-index: -1;
+    top: 130px;
+    right: 0;
+    position: absolute;
+    height: 220px;
+    width: 400px;
+    border-radius: 100px 0 0  100px ;
+    background-color: hsl(231, 69%, 60%);
+}
+.features , .download, .questions , .newsletter{
+text-align: center;
+}
+.features p ,
+.download p ,
+.questions p{
+    font-weight: 500;
+    color: hsl(229, 8%, 60%);
+    line-height: 1.4;
+    margin: 30px auto;
+ width: 45%;
+}
+.questions p{
+    width: 90%;
+}
+.download p{
+    width: 60%;
+}
+.feature-nav{
+   
+    margin: 0 auto;
+    padding: 20px 10px;
+    max-width: 54%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+   color: hsla(229, 8%, 60%, 0.61);
+   border-bottom: 1px solid hsl(229, 8%, 60%);
+}
+.feature-nav h5{
+    position: relative;
+    cursor: pointer;
+    transition: all  0.5s ease;
+    
+}
+.feature-nav .active{
+    color: hsl(229, 8%, 60%);
+}
+.feature-nav h5:hover{
+    color: hsl(0, 94%, 66%);
+}
+.feature-nav .active::after{
+    
+    content: '';
+position: absolute;
+width: 126%;
+height: 4px;
+border-radius: 50px;
+background: hsl(0, 94%, 66%);
+left: -13%;
+top: 34px;
+}
+.feature-content{
+    height:300px;
+    position: relative;
+    margin: 80px 0;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+.feature-content img{
+    width: 400px;
+}
+.feature-content h1{
+    font-weight: 500;
+    font-size: 35px;
+}
+.feature-content p{
+    color: hsl(229, 8%, 60%);
+    max-width: 93%;
+    line-height: 1.4;
+    margin: 20px 0;
+}
+
+
+.featureshape{
+    z-index: -1;
+    top: 70px;
+    left: -150px;
+    position: absolute;
+    height: 240px;
+    width: 480px;
+    border-radius: 0 100px  100px 0 ;
+    background-color: hsl(231, 69%, 60%);
+}
+.download  .grid{
+    display: grid;
+    grid-template-columns: 240px 240px 240px;
+    
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.download .grid .grid-item{
+    border-radius: 10px;
+    height: 300px;
+    background-color: white;
+    background-image: url("images/bg-dots.svg");
+    background-repeat: no-repeat;
+    background-size: 293px;
+    background-position: top 75% left;
+ padding: 20px;
+ box-shadow: 0 5px 10px  hsla(231, 69%, 60%, 0.096)
+}
+.download .grid .grid-item p{
+    width: 100%;
+    margin: 20px 0 3px 0;
+    color: hsl(229, 31%, 21%);
+    font-weight: 500;
+}
+.download .grid .grid-item span{
+    font-size: 13px;
+    color: hsl(229, 8%, 60%);
+}
+ button{
+    margin-top: 50px;
+    font-weight: 500;
+    color: white;
+    padding: 10px 13px;
+    background-color:hsl(231, 69%, 60%);
+    border: 1.5px  solid transparent;
+
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px  hsla(231, 69%, 60%, 0.205);
+    transition: all  0.8s ease;
+}
+.download button:hover{
+background: transparent;
+border: 1.5px solid hsl(231, 69%, 60%);
+color: hsl(231, 69%, 60%);
+}
+.download .grid  .two{
+margin-top: 60px;
+}
+.download .grid  .three{
+    margin-top: 120px;
+    }
+.questions{
+    max-width: 600px;
+    margin: 50px auto;
+}
+.question img{
+    width: 40px
+}
+.questions-container{
+    margin-top: 70px;
+    text-align: start;
+}
+.questions .number{
+    border-bottom: 1px solid hsl(229, 8%, 60%);
+
+    padding: 25px 20px  25px 0;
+}
+.questions .one{
+    border-top: 1px solid  hsl(229, 8%, 60%);
+}
+.questions .number span{
+    transition: all  0.5s ease;
+    color: hsl(229, 31%, 21%);
+    font-weight: 500;
+}
+.questions .number .question{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.questions .number .question span:hover{
+    color: hsl(0, 94%, 66%);
+   
+}
+.questions .number .answer {
+    padding-top: 40px;
+    display: none;
+ 
+}
+.questions .number .answer span{
+    color: hsl(229, 8%, 60%);
+    line-height: 1.8;
+}
+.questions  img{
+    cursor: pointer;
+}
+.newsletter{
+    background:hsl(231, 69%, 60%) ;
+    padding: 40px 0 60px 0;
+    color: white;
+    
+}
+.newsletter span{
+text-transform: uppercase;
+letter-spacing: 5px;
+font-size: 14px;
+
+}
+.newsletter h2{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    max-width: 35%;
+    margin: 30px auto ;
+}
+.newsletter .inpt{
+    display: flex;
+    gap: 20px;
+justify-content: center;
+}
+.newsletter input{
+    padding: 15px;
+    width: 290px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    z-index: 1;
+    position: relative;
+  
+}
+.newsletter  ::placeholder{
+color: hsla(229, 8%, 60%, 0.436);
+}
+.newsletter button{
+    padding: 10px 20px;
+    background: hsl(0, 94%, 66%);
+    border: 1.5px solid transparent;
+    color: white;
+    border-radius: 5px;
+    margin-top: 0;
+    transition: all  0.5s ease;
+}
+.newsletter button:hover{
+    color: hsl(0, 94%, 66%);
+background: white;
+border-color: hsl(0, 94%, 66%);
+}
+.newsletter .inpt .email{
+    position: relative;
+    
+
+}
+.newsletter .inpt .alert{
+    position: absolute;
+    background: hsl(0, 94%, 66%);
+    height: 80px;
+    top: -2px;
+    left: -1px;
+    width: 101.2%;
+    border-radius: 5px;
+   display: none;
+
+}
+.newsletter .inpt .error{
+    position: relative;
+    z-index: 3;
+}
+.newsletter .inpt img{
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    display: none;
+}
+.newsletter .inpt  i{
+  position: absolute;
+  left: 10px;
+  bottom: 8px;
+    font-size: 12px;
+    text-align: start;
+}
+footer{
+    padding: 40px 150px;
+    background: hsl(229, 31%, 21%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .ittems{
+    display: flex;
+    align-items: center;
+ gap: 40px;
+}
+footer .links{
+    display: flex;
+    gap: 20px;
+}
+footer .links a{
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.82);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all  0.8s ease;
+  
+}
+footer .links a:hover{
+    color: hsl(0, 94%, 66%);
+}
+.social{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+#menu{
+display: none;
+}
+.mobile-nav{
+    display: none;
+    padding: 40px;
+    position:fixed;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(229, 31%, 21%, 0.904);
+}
+.mobile-nav .imgs{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobile-nav  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+    
+
+    
+}
+.mobile-nav  .links a{
+    padding: 25px 0;
+    border-top: 1px solid hsl(229, 8%, 60%);
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    transition: all  0.8s ease;
+}
+.mobile-nav  .links a:last-child{
+    margin-top: 20px;
+    border: 2px solid white;
+    padding: 15px 0;
+    border-radius: 5px;
+
+}
+.mobile-nav  .links a:nth-child(3){
+    border-bottom: 1px solid hsl(229, 8%, 60%);
+}
+.mobile-nav  .links a:last-child:hover{
+    border: 2px solid hsl(0, 94%, 66%);
+}
+.mobile-nav  .links a:hover{
+    color: hsl(0, 94%, 66%);
+}
+@media screen and (max-width:376px){
+    body{
+        font-size: 14px;
+    }
+    #menu{
+        display: block;
+    }
+    nav, section , .features, .download,.questions , footer{
+        padding: 40px;
+    }
+    nav .links {
+        display: none;
+    }
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .hero img {
+        width: 340px;
+    }
+    .hero .txt{
+        text-align: center;
+    }
+    .heroshape {
+        top: 112px;
+        height: 178px;
+        width: 306px;
+    }
+
+    .hero p {
+        max-width: 100%;
+    }
+    .hero h1 {
+        font-size: 31px;
+    }
+    .features p, .download p, .questions p{
+        width: 100%;
+    }
+    .feature-nav {
+        flex-direction: column;
+        max-width: 100%;
+        border: none;
+    }
+    .feature-nav h5 {
+        text-align: center;
+      width: 280px;
+    padding-bottom: 21px;
+        border-bottom: 1px solid hsl(229, 8%, 60%);
+    }
+    .feature-nav .active::after{
+        width: 100%;
+        left: 0;
+    }
+    .feature-content {
+       
+       text-align: center;
+        flex-direction: column;
+    }
+  
+    .feature-content button{
+        display: none   ;
+    }
+    .featureshape {
+        top: 65px;
+        width: 404px;
+        height: 208px;
+    }
+    .feature-content h1{
+        font-size: 27px;
+        font-weight: 500;
+    }
+    .feature-content img {
+    
+        width: 320px;
+    }
+    .feature-content p {
+        max-width: 100%;
+    }
+    .download{
+        margin-top: 40px;
+    }
+    .download .grid {
+       
+        grid-template-columns: 1fr;
+    }
+    .download .grid .grid-item{
+        background-position: top 70% left;
+        margin-top: 0;
+    }
+    .download h2 {
+        font-size: 24px;
+    }
+    .questions h2{
+        font-size: 21px;
+    }
+    .questions-container span{
+        font-size: 12px;
+    }
+    .question img {
+        width: 30px;
+    }
+    .newsletter h2 {
+        max-width: 100%;
+    }
+    .newsletter .inpt {
+        flex-direction: column;
+        gap:60px;
+        justify-content: center;
+    }
+    .newsletter button {
+        margin: 0 40px;
+    }
+    .newsletter .inpt .alert {
+     
+      
+        left: 40px;
+        width: 79.2%;
+       
+    }
+    footer{
+        flex-direction: column;
+        gap: 30px;
+    }
+    footer .ittems {
+        flex-direction: column;
+    }
+    footer .links {
+        flex-direction: column;
+        text-align: center;
+    }
+    .newsletter .inpt img {
+        right: 60px;
+    }
+}
